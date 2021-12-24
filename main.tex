@@ -1,0 +1,32 @@
+% * Flags
+%
+% To declare a new flag `myflag` with the value `true`, simply add
+%
+%     \newif\ifmyflag\myflagtrue
+%
+% To prevent conflicts when editing documents collaboratively, if you want to
+% temporarily change the contents of a flag, you should do so under a separate
+% file `flags.tex` (preferably not kept under version control). E.g.:
+%
+%     \myflagtrue
+
+\makeatletter \@input{flags} \makeatother
+
+\documentclass{article}
+
+\input{preamble}
+
+\title{}
+\author{Arthur Azevedo de Amorim}
+
+\begin{document}
+
+\maketitle
+
+\printbibliography
+
+\end{document}
+
+% Local Variables:
+% TeX-engine: luatex
+% End:

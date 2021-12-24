@@ -1,3 +1,5 @@
+% Packages
+
 \usepackage{mathpartir}
 \usepackage{unicode-math}
 \usepackage{fontspec}
@@ -7,6 +9,9 @@
 \usepackage{cleveref}
 \usepackage{tikz-cd}
 \usepackage[backend=biber, style=alphabetic]{biblatex}
+\usepackage[margin=false,inline=true]{fixme}
+
+% Theorem environment declarations
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
@@ -26,5 +31,16 @@
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 
+% Fonts
+
 \setmainfont{Libertinus Serif}
 \setmathfont{STIX 2 Math}
+
+% Bibliography
+
+\bibliography{refs.bib}
+
+% Comment macros
+
+\FXRegisterAuthor{aaa}{anaaa}{\color{cyan}AAA}
+\newcommand{\aaa}[1]{\aaanote{#1}}
