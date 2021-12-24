@@ -1,6 +1,8 @@
 auto
 main.pdf
 *.aux
+*.bbl
+*.blg
 *.bcf
 *.log
 *.out
